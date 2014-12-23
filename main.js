@@ -9,8 +9,8 @@
     
     var sums = {};
     var hLength = h.length;
-    for (var i = 0; i < hLength - 1; i++) {
-        for (var j = i + 1; j < hLength; j++) {
+    for (var i = 0; i < hLength; i++) {
+        for (var j = i + 1; j <= hLength; j++) {
             var key = h.slice(i, j).join();
             sums[key] = sums[key] || { '0': 0, '1': 0, '2': 0 };
             sums[key][h[j]]++;
